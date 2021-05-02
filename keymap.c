@@ -27,32 +27,33 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|--------------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
             KC_LSFT,    KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,                         KC_N,    KC_M, KC_COMM,  KC_DOT, KC_SLSH, KC_RSFT,
   //|--------------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-                                          KC_LCTL,   MO(1), SFT_T(KC_ENT),     KC_SPC,   MO(2), KC_BSPC
+                                          KC_LCTL,   MO(1), SFT_T(KC_SPC),   SFT_T(KC_SPC), MO(2), KC_ENT
                                       //`--------------------------------'  `--------------------------'
 
   ),
+  //  KC_PERC, KC_CIRC, KC_AMPR, KC_ASTR,
 
   [1] = LAYOUT_split_3x6_3(
   //,-----------------------------------------------------------.                    ,-----------------------------------------------------.
-      ALT_T(KC_ESC), XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                       KC_GRV,    KC_7,    KC_8,    KC_9,    KC_0, KC_BSPC,
+      ALT_T(KC_ESC), KC_LPRN, KC_RPRN,  KC_GRV, KC_TILD, KC_BSLS,                      KC_EXLM,   KC_AT, KC_HASH,  KC_DLR, KC_MINS, KC_BSPC,
   //|--------------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      WIN_T(KC_TAB), XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                      KC_BSLS,    KC_4,    KC_5,    KC_6, KC_LBRC, KC_RBRC,
+      WIN_T(KC_TAB), KC_LBRC, KC_RBRC, KC_PIPE, KC_UNDS, XXXXXXX,                      KC_PERC, KC_CIRC, KC_AMPR, KC_ASTR, KC_PLUS,  KC_EQL,
   //|--------------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-            KC_LSFT, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                      KC_MINS,    KC_1,    KC_2,    KC_3,  KC_EQL, KC_RSFT,
+            KC_LSFT, KC_LCBR, KC_RCBR, XXXXXXX, XXXXXXX, XXXXXXX,                      XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_RSFT,
   //|--------------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-                                          KC_LCTL, _______, SFT_T(KC_ENT),     KC_SPC,   MO(3), KC_BSPC
+                                          KC_LCTL, _______, SFT_T(KC_SPC),   SFT_T(KC_SPC), MO(3), KC_ENT
                                       //`--------------------------------'  `--------------------------'
   ),
 
   [2] = LAYOUT_split_3x6_3(
   //,-----------------------------------------------------------.                    ,-----------------------------------------------------.
-      ALT_T(KC_ESC), XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                      XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,  KC_DEL, KC_BSPC,
+      ALT_T(KC_ESC),    KC_1,    KC_2,    KC_3,    KC_4,    KC_5,                         KC_6,    KC_7,    KC_8,    KC_9,    KC_0, KC_BSPC,
   //|--------------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      WIN_T(KC_TAB), XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                      KC_LEFT, KC_DOWN,   KC_UP,KC_RIGHT, XXXXXXX,  KC_INS,
+      WIN_T(KC_TAB), XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                      KC_LEFT, KC_DOWN,   KC_UP,KC_RIGHT,  KC_DOT,  KC_DEL,
   //|--------------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-            KC_LSFT, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                      KC_PSCR, KC_HOME,  KC_END, KC_PGUP, KC_PGDN, KC_RSFT,
+            KC_LSFT, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,  KC_INS,                      KC_HOME,  KC_END, KC_PGUP, KC_PGDN,  KC_PSCR,KC_RSFT,
   //|--------------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-                                          KC_LCTL,   MO(3), SFT_T(KC_ENT),     KC_SPC, _______, KC_BSPC
+                                          KC_LCTL,   MO(3), SFT_T(KC_SPC),   SFT_T(KC_SPC), _______, KC_ENT
                                       //`--------------------------------'  `--------------------------'
   ),
 
